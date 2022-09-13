@@ -12,7 +12,201 @@
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
     <main>
-      <!-- Student code goes here -->
+      <section class="card" id="html-section">
+        <h2>HTML</h2>
+        <ul>
+          <li>
+            <code>&lthead&gt</code> 
+            contains information about the webpage which does not appear on the webpage itself.
+          </li>
+          <ul>
+            <li>
+              <code>&ltmeta/&gt</code> 
+              represents one "setting" for the webpage.
+            </li>
+            <ul>
+              <li>
+                <code>charset</code> 
+                sets the encoding format for the webpage (best to use UTF-8, or unicode).
+              </li>
+              <li>
+                <code>name</code> and <code>http-equiv</code> 
+                represent which setting you want to edit.
+              </li>
+              <li>
+                <code>content</code> 
+                The value of this attribute will set the value of the setting specified by the name or http-equiv attribute.
+              </li>
+              <li>
+                It is a good idea in every webpage to ensure the setting name="viewport" has the value of content="width=device-width, initial-scale=1.0". This ensures that the webpage is scaled to fit the size of whatever aspect ratio screen it is being displayed on.
+              </li>
+            </ul>
+            <li>
+              <code>&lttitle&gt</code> 
+              represents the text to be displayed at the top of the browser. Is used by search engines.
+            </li>
+          </ul>
+          <li>
+            
+            <code>&ltbody&gt</code> 
+            represents the visible content on the webpage.
+          </li>
+          <ul>
+            <li>
+              <code>&ltheader&gt</code> 
+              contains the navigation bar and other content which goes on the top of the screen.
+            </li>
+            <li>
+              <code>&ltmain&gt</code> 
+              contains the bulk of the webpage.
+            </li>
+            <ul>
+              <li>
+                <code>&ltsection&gt</code> 
+                is used as a a container for sections of 
+                <code>&ltmain&gt</code>.
+              </li>
+            </ul>
+            <li>
+              <code>&ltfooter&gt</code> 
+              contains content at the bottom of the page such as the author, copyright, contact information, sitemap, and navigation.
+            </li>
+            <br/>
+            <li>
+              <code>&ltp&gt</code> 
+              represents a paragraph of text on a new line.
+            </li>
+            <li>
+              <code>&ltbr/&gt</code> 
+              represents an empy line.
+            </li>
+            <li>
+              <code>&ltli&gt</code> 
+              represents a list item. Should be nested within a 
+              <code>&ltul&gt</code> 
+              or a 
+              <code>&ltol&gt</code>.
+            </li>
+            <li>
+              <code>&ltul&gt</code> 
+              represents an unordered list (ie bullet points).
+            </li>
+            <li>
+              <code>&ltol&gt</code> 
+              represents an ordered list (ie numbered).
+            </li>
+            <li>
+              <code>&lth1&gt, &lth2&gt, &lth3&gt, &lth4&gt, &lth5&gt, &lth6&gt</code> 
+              all represent different tiers of headings. only one instance of 
+              <code>&lth1&gt</code>
+              should exist per webpage. These are used by search engines.
+            </li>
+          </ul>
+          <li>
+            Attributes are additional pieces of customization which can be added to html elements.
+          </li>
+          <ul>
+            <li>
+              <code>id</code>
+              an identifier used to find and select elements.
+            </li>
+            <li>
+              <code>class</code> 
+              is similar to
+              <code>id</code>. 
+              (TBC)
+            </li>
+          </ul>
+        </ul>
+      </section>
+   
+      <section class="card" id="css-section">
+        <h2>CSS</h2>
+        <ul>
+          <li>
+            Enter your CSS notes here!
+          </li>
+        </ul>
+      </section>
+   
+      <section class="card" id="git-section">
+        <h2>Git</h2>
+        <ul>
+          <li>
+            <code>git clone SSH-value</code> 
+            downloads the repo specified by the SSH-value onto the local computer. 
+          </li>
+          <li>
+            <code>git status</code> 
+            checks what branch you are currently on.
+          </li>
+          <li>
+            <code>git config --global &ltsetting&gt &ltvalue&gt</code> 
+            changes the value of 
+            <code>&ltsetting&gt</code> 
+            to match 
+            <code>&ltvalue&gt</code>. 
+            If no value is provided, returns the current value. Settings include:
+            <ul>
+              <li>
+                <code>user.name</code>: the username publicly associated with each of your actions on Git.
+              </li>
+              <li>
+                <code>email</code>: the email publicly assoicated with each of your actions on Git.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <code>git checkout [-b] &ltbranch name&gt</code>
+            switches the active branch to the specified one.
+            <ul>
+              <li>
+                <code>-b</code> 
+                tells git to create the branch before switching to it.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <code>git pull origin &ltbranch name&gt</code> 
+            updates the GitHub copy of the specified branch onto the local computer.
+          </li>
+          <li>
+            <code>git add [-A] &ltfile-1&gt &ltfile-2&gt &ltfile-n&gt</code>
+            adds the specified files to the staging area of git.
+            <ul>
+              <code>-A</code> 
+              adds all files in the active branch to to staging area.
+            </ul>
+          </li>
+          <li>
+            <code>git commit [-m "message"]</code> 
+            commits the changes in the staging area to the branch.
+            <ul>
+              <li>
+                <code>-m "message"</code> 
+                includes the message specified in quotes with the commit.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <code>git push origin &ltbranch name&gt</code> 
+            uploads the specified branch to its GitHub copy. 
+          </li>
+          <li>
+            <code>git revert &ltSHA-code&gt</code> 
+            reverts the current branch to the commit specified by its unique SHA code.
+          </li>
+        </ul>
+      </section>
+   
+      <section class="card" id="javascript-section">
+        <h2>JavaScript</h2>
+        <ul>
+          <li>
+            Enter your JavaScript notes here!
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer>
